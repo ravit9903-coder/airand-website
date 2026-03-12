@@ -1,7 +1,7 @@
 body{
 margin:0;
 font-family:Arial;
-background:#0f172a;
+background:#020617;
 color:white;
 }
 
@@ -10,6 +10,7 @@ display:flex;
 justify-content:space-between;
 padding:20px;
 background:#020617;
+border-bottom:1px solid #334155;
 }
 
 nav a{
@@ -20,7 +21,7 @@ text-decoration:none;
 
 .hero{
 text-align:center;
-padding:120px;
+padding:150px;
 background:linear-gradient(45deg,#0ea5e9,#6366f1);
 }
 
@@ -29,35 +30,37 @@ font-size:50px;
 }
 
 button{
-padding:10px 20px;
+padding:12px 25px;
 border:none;
-background:#38bdf8;
-color:black;
+background:#22c55e;
+color:white;
 cursor:pointer;
-border-radius:5px;
+border-radius:6px;
 }
 
 section{
-padding:60px;
+padding:70px;
 text-align:center;
 }
 
-.service-box{
+.grid{
 display:flex;
+gap:25px;
 justify-content:center;
-gap:30px;
+flex-wrap:wrap;
 }
 
 .card{
-background:#1e293b;
+background:#0f172a;
 padding:30px;
 border-radius:10px;
-width:200px;
+width:220px;
 transition:0.3s;
 }
 
 .card:hover{
-transform:scale(1.1);
+transform:scale(1.08);
+background:#1e293b;
 }
 
 input,textarea{
@@ -72,4 +75,5 @@ footer{
 text-align:center;
 padding:20px;
 background:#020617;
+border-top:1px solid #334155;
 }
