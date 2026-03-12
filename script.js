@@ -6,19 +6,29 @@ behavior:"smooth"
 
 }
 
+
 function sendMessage(){
 
-let input=document.getElementById("chatInput");
-let message=input.value;
+let input=document.getElementById("chat-input")
 
-let chat=document.getElementById("chatBody");
+let msg=input.value
 
-chat.innerHTML+= "<div>User: "+message+"</div>";
+let chat=document.getElementById("chat-body")
 
-let reply="AI Assistant: Thank you for contacting AIRANDD.";
+chat.innerHTML += "<div>User: "+msg+"</div>"
 
-chat.innerHTML+= "<div>"+reply+"</div>";
+chat.innerHTML += "<div>AI: Welcome to AIRANDD</div>"
 
-input.value="";
+input.value=""
 
 }
+
+
+particlesJS("particles-js",{
+
+particles:{
+number:{value:80},
+size:{value:3}
+}
+
+});

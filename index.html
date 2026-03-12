@@ -3,21 +3,23 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>AIRANDD | AI Research and Development</title>
 
 <link rel="stylesheet" href="style.css">
 
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
 </head>
 
 <body>
 
-<div class="particles"></div>
+<div id="particles-js"></div>
 
 <header>
 
-<h1>AIRANDD</h1>
+<img src="assets/logo.png" class="logo">
 
 <nav>
 <a href="#home">Home</a>
@@ -29,26 +31,31 @@
 
 </header>
 
+
 <section id="home" class="hero">
 
-<h2>AI Research and Development</h2>
-<p>Innovating the Future with Artificial Intelligence</p>
+<h1>AIRANDD</h1>
+
+<h2>Artificial Intelligence Research and Development</h2>
+
+<p>Innovating the Future with AI</p>
 
 <button onclick="scrollContact()">Contact Us</button>
 
 </section>
 
+
 <section id="about">
 
-<h2>About AIRANDD</h2>
+<h2>About Us</h2>
 
 <p>
-AIRANDD is an AI focused technology company delivering
-Artificial Intelligence, mobile applications and advanced
-software solutions for modern businesses.
+AIRANDD is a technology company focused on Artificial Intelligence,
+software development and next-generation digital innovation.
 </p>
 
 </section>
+
 
 <section id="services">
 
@@ -58,12 +65,12 @@ software solutions for modern businesses.
 
 <div class="card">
 <h3>AI Solutions</h3>
-<p>Machine learning and AI automation systems.</p>
+<p>Machine learning systems and automation.</p>
 </div>
 
 <div class="card">
 <h3>Software Development</h3>
-<p>Custom enterprise applications.</p>
+<p>Enterprise software systems.</p>
 </div>
 
 <div class="card">
@@ -73,27 +80,32 @@ software solutions for modern businesses.
 
 <div class="card">
 <h3>Web Development</h3>
-<p>Modern web applications.</p>
+<p>Modern scalable web apps.</p>
 </div>
 
 </div>
 
 </section>
 
+
 <section id="projects">
 
-<h2>Projects Portfolio</h2>
+<h2>Projects</h2>
 
 <div class="gallery">
 
 <div class="project">AI Chatbot</div>
+
+<div class="project">Smart Parking AI</div>
+
 <div class="project">Marketplace App</div>
+
 <div class="project">Image Recognition AI</div>
-<div class="project">Smart Automation</div>
 
 </div>
 
 </section>
+
 
 <section id="contact">
 
@@ -101,9 +113,9 @@ software solutions for modern businesses.
 
 <form action="https://formsubmit.co/airandd15@gmail.com" method="POST">
 
-<input type="text" name="name" placeholder="Your Name" required>
+<input type="text" name="name" placeholder="Name" required>
 
-<input type="email" name="email" placeholder="Your Email" required>
+<input type="email" name="email" placeholder="Email" required>
 
 <textarea name="message" placeholder="Message"></textarea>
 
@@ -112,14 +124,17 @@ software solutions for modern businesses.
 </form>
 
 <p>Email: airandd15@gmail.com</p>
+
 <p>Phone: +91 9912596763</p>
+
 <p>Location: Hyderabad</p>
 
 </section>
 
+
 <footer>
 
-<p>© 2026 AIRANDD AI Research and Development</p>
+© 2026 AIRANDD AI Research and Development
 
 </footer>
 
@@ -128,13 +143,14 @@ software solutions for modern businesses.
 
 <div class="chat-header">AI Assistant</div>
 
-<div class="chat-body" id="chatBody"></div>
+<div id="chat-body"></div>
 
-<input type="text" id="chatInput" placeholder="Ask something...">
+<input type="text" id="chat-input">
 
 <button onclick="sendMessage()">Send</button>
 
 </div>
+
 
 <script src="script.js"></script>
 
