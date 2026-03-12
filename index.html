@@ -1,14 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Airand Company</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AIRAND Company</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<h1>Welcome to AIRAND</h1>
-<p>Innovating the Future</p>
+<header>
+<h1>AIRAND</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+
+<section id="home" class="hero">
+
+<h2>Welcome to AIRAND</h2>
+<p>Innovating the Future with Technology</p>
+
+<button onclick="scrollToContact()">Contact Us</button>
+
+</section>
+
+
+<section id="about">
+
+<h2>About AIRAND</h2>
+
+<p>
+AIRAND is a modern technology company focused on innovation,
+software development and digital solutions.
+</p>
+
+</section>
+
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="service-box">
+
+<div class="card">
+<h3>Software Development</h3>
+<p>Custom software solutions for businesses.</p>
+</div>
+
+<div class="card">
+<h3>Mobile Apps</h3>
+<p>Android & Flutter app development.</p>
+</div>
+
+<div class="card">
+<h3>AI Solutions</h3>
+<p>Artificial Intelligence based applications.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Message"></textarea>
+
+<button type="submit">Send</button>
+
+</form>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 AIRAND Company</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
