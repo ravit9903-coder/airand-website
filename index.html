@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,6 +12,8 @@
 </head>
 
 <body>
+
+<div class="particles"></div>
 
 <header>
 
@@ -26,30 +29,26 @@
 
 </header>
 
-
 <section id="home" class="hero">
 
 <h2>AI Research and Development</h2>
-
 <p>Innovating the Future with Artificial Intelligence</p>
 
 <button onclick="scrollContact()">Contact Us</button>
 
 </section>
 
-
 <section id="about">
 
 <h2>About AIRANDD</h2>
 
 <p>
-AIRANDD is a modern technology company focused on Artificial Intelligence,
-software engineering, and innovative digital solutions.
-We help businesses transform using AI, automation and mobile technology.
+AIRANDD is an AI focused technology company delivering
+Artificial Intelligence, mobile applications and advanced
+software solutions for modern businesses.
 </p>
 
 </section>
-
 
 <section id="services">
 
@@ -59,66 +58,54 @@ We help businesses transform using AI, automation and mobile technology.
 
 <div class="card">
 <h3>AI Solutions</h3>
-<p>Machine learning and AI based intelligent systems.</p>
+<p>Machine learning and AI automation systems.</p>
 </div>
 
 <div class="card">
 <h3>Software Development</h3>
-<p>Enterprise and custom software solutions.</p>
+<p>Custom enterprise applications.</p>
 </div>
 
 <div class="card">
 <h3>Mobile Apps</h3>
-<p>Flutter based Android and iOS app development.</p>
+<p>Flutter Android & iOS apps.</p>
 </div>
 
 <div class="card">
 <h3>Web Development</h3>
-<p>Modern responsive websites and web applications.</p>
+<p>Modern web applications.</p>
 </div>
 
 </div>
 
 </section>
-
 
 <section id="projects">
 
-<h2>Projects</h2>
+<h2>Projects Portfolio</h2>
 
-<div class="grid">
+<div class="gallery">
 
-<div class="card">
-<h3>Smart AI Chatbot</h3>
-<p>AI chatbot for customer automation.</p>
-</div>
-
-<div class="card">
-<h3>Mobile Marketplace App</h3>
-<p>Flutter based digital marketplace platform.</p>
-</div>
-
-<div class="card">
-<h3>AI Image Recognition</h3>
-<p>Deep learning based object detection system.</p>
-</div>
+<div class="project">AI Chatbot</div>
+<div class="project">Marketplace App</div>
+<div class="project">Image Recognition AI</div>
+<div class="project">Smart Automation</div>
 
 </div>
 
 </section>
-
 
 <section id="contact">
 
 <h2>Contact AIRANDD</h2>
 
-<form>
+<form action="https://formsubmit.co/airandd15@gmail.com" method="POST">
 
-<input type="text" placeholder="Your Name">
+<input type="text" name="name" placeholder="Your Name" required>
 
-<input type="email" placeholder="Your Email">
+<input type="email" name="email" placeholder="Your Email" required>
 
-<textarea placeholder="Message"></textarea>
+<textarea name="message" placeholder="Message"></textarea>
 
 <button type="submit">Send Message</button>
 
@@ -130,12 +117,24 @@ We help businesses transform using AI, automation and mobile technology.
 
 </section>
 
-
 <footer>
 
-<p>© 2026 AIRANDD - AI Research and Development</p>
+<p>© 2026 AIRANDD AI Research and Development</p>
 
 </footer>
+
+
+<div class="chatbot">
+
+<div class="chat-header">AI Assistant</div>
+
+<div class="chat-body" id="chatBody"></div>
+
+<input type="text" id="chatInput" placeholder="Ask something...">
+
+<button onclick="sendMessage()">Send</button>
+
+</div>
 
 <script src="script.js"></script>
 

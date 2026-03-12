@@ -3,6 +3,7 @@ margin:0;
 font-family:Arial;
 background:#020617;
 color:white;
+overflow-x:hidden;
 }
 
 header{
@@ -21,21 +22,21 @@ text-decoration:none;
 
 .hero{
 text-align:center;
-padding:150px;
+padding:160px;
 background:linear-gradient(45deg,#0ea5e9,#6366f1);
 }
 
 .hero h2{
-font-size:50px;
+font-size:55px;
 }
 
 button{
-padding:12px 25px;
-border:none;
+padding:12px 20px;
 background:#22c55e;
+border:none;
 color:white;
+border-radius:5px;
 cursor:pointer;
-border-radius:6px;
 }
 
 section{
@@ -45,9 +46,9 @@ text-align:center;
 
 .grid{
 display:flex;
+flex-wrap:wrap;
 gap:25px;
 justify-content:center;
-flex-wrap:wrap;
 }
 
 .card{
@@ -59,21 +60,56 @@ transition:0.3s;
 }
 
 .card:hover{
-transform:scale(1.08);
+transform:scale(1.1);
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.project{
 background:#1e293b;
+padding:40px;
+width:200px;
+border-radius:10px;
 }
 
 input,textarea{
 width:300px;
 padding:10px;
 margin:10px;
-border-radius:5px;
 border:none;
+border-radius:5px;
 }
 
 footer{
-text-align:center;
 padding:20px;
+text-align:center;
 background:#020617;
-border-top:1px solid #334155;
+}
+
+.chatbot{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#0f172a;
+padding:15px;
+border-radius:10px;
+width:250px;
+}
+
+.chat-header{
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.chat-body{
+height:120px;
+overflow-y:auto;
+background:#020617;
+padding:5px;
+margin-bottom:5px;
 }
